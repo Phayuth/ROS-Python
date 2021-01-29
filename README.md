@@ -2,12 +2,72 @@
 # ROS In 5 Minute Note
 ### by The Construct
 1. ROS Catkin Workspace
+
+create catkin_ws on home directory
+```
+$ mkdir catkin_ws/src -p
+$ cd catkin_ws
+$ catkin_make
+$ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+```
+Now roscd can be use to navigate to catkin_ws\
+
 2. Create ROS Package
+
+Using catkin_create_pkg with -h flag for help
+```
+$ catkin_create_pkg -k
+```
+Example
+```
+$ cd catkin_ws
+$ cd src
+$ catkin_create_pkg tutorial rospy std_msgs
+$ cd ..
+$ catkin_make
+```
+rospy and std_msgs is the dependencies of package
+
 3. Create ROS Publisher
+
+In Package folder
+```
+$ cd src
+$ touch publisher.py
+$ gedit publisher.py
+```
+In editor
+```
+# Code_ros_py_publisher_tutorial.py
+#! /usr/bin/env python
+
+WRITE PYTHON CODE HERO
+
+```
+Run the code
+```
+rosrun tutorial publisher.py
+```
 4. ROSCORE
+Run roscore the initiate ros master server for ROS
+```
+roscore
+```
 5. ROS Node
+ROS node contains a code for Publication, Subscription and Services
+```
+$ rosnode list
+$ rosnode info /scan
+```
 6. ROS run
+```
+$ rosrun [name of the package] [executable code.py]
+```
+Use rosrun -h flag for help
+
 7. Turtulesim ROS Node Example
+```
+```
 8. ROS run vs ROS launch
 9. Launch a ROS node
 10. ROS Master URI
