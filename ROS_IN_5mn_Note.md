@@ -150,7 +150,7 @@ https://gist.github.com/bayodesegun/68bc6043c206d73dfdbb8275bd9fde8f
   <include ns="namespace2" file"$(find rospy_tutorial)/src/exe.launch" />
 </launch>
 ```
-16. Compile ROS Message
+15. Compile ROS Message
 
 Create folder msg
 ```
@@ -177,7 +177,7 @@ $ python -c 'from financial_market.msg import exe; print "OK"'
 ```
 More on : https://www.youtube.com/watch?v=NpqRLuUj2vE
 
-17. ROS Service
+16. ROS Service
 
 ROS Service has a request and a respond.\
 ROS Service is synchronize and interactive.
@@ -188,7 +188,7 @@ $ rossrv show asdf/asdf
 $ rosservice call asdf/asdf
 ```
 
-18. Compile ROS Service Message
+17. Compile ROS Service Message
 
 - To make the service
 Example
@@ -209,30 +209,30 @@ DO Like ROS message compile
 
 More on : https://www.youtube.com/watch?v=9scwWpM7jiw
 
-28. Create ROS Service Client
-29. Create ROS Service Client
-30. Create ROS Action Server
-31. ROS Action
-32. Create ROS Action Client
-33. Rosed, use and configure
-34. ROS Package Path
-35. ROS IP
-36. setup.bash and setup.sh
-37. ROS directories , src , build, devel
-38. rqt_graph
-39. roswtf
-40. tf view frame
-41. ROS tf
-42. ROS Namespace
-43. ROS bag
-44. rqt plot
-45. rqt_console, debugging
-46. Turtlesim ROS basic
-47. Package.xml
-48. Gazebo create and launch
-49. Master ROS Subject
-50. Load params on Parameter Server
-51. Unit test loading ROS Param
-52. Testing ROS python code
-53. /tf data
-54. Robot pose publish with Tfbroadcaster in python
+18. Compile ROS Action messages
+19. Create ROS Service Client
+20. Create ROS Action Server
+21. ROS Action
+22. Create ROS Action Client
+23. Rosed, use and configure
+24. ROS Package Path
+25. ROS IP
+26. setup.bash and setup.sh
+27. ROS directories , src , build, devel
+28. rqt_graph
+29. roswtf
+30. tf view frame
+31. ROS tf
+32. ROS Namespace
+33. ROS bag
+34. rqt plot
+35. rqt_console, debugging
+36. Turtlesim ROS basic
+37. Package.xml
+38. Gazebo create and launch
+39. Master ROS Subject
+40. Load params on Parameter Server
+41. Unit test loading ROS Param
+42. Testing ROS python code
+43. /tf data
+44. Robot pose publish with Tfbroadcaster in python
