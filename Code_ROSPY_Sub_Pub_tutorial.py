@@ -24,8 +24,8 @@ def imu_callback(msg):
 
 def twist (msg):
     # move = Twist()
-    print "velocidad linear x = " + str(move.linear.x)
-    print "velocidad angular z = " + str (move.angular.z)
+    print "velocidad linear x = " + str(msg.linear.x)
+    print "velocidad angular z = " + str (msg.angular.z)
     rate.sleep()
     #sub=rospy.Subscriber('cmd_vel', Twist, twist)
 
